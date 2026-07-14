@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conclusion | Hoàng Thị Quỳnh</title>
+<style>
+  :root {
+    --pink-bg: #fdf1f5;
+    --pink-bg-soft: #fce6ee;
+    --pink-accent: #e8779a;
+    --pink-accent-dark: #c85c80;
+    --pink-card: #ffffff;
+    --text-dark: #4a2f3a;
+    --text-muted: #8a6b76;
+    --border-soft: #f3d3e0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--pink-bg);
+    color: var(--text-dark);
+    line-height: 1.6;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    background: var(--pink-card);
+    border-bottom: 1px solid var(--border-soft);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .brand { font-weight: 700; color: var(--pink-accent-dark); font-size: 1.05rem; }
+  .brand small { display: block; font-weight: 400; color: var(--text-muted); font-size: 0.8rem; }
+  nav a {
+    color: var(--text-dark);
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 0.95rem;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: border-color .2s, color .2s;
+  }
+  nav a:hover, nav a.active { color: var(--pink-accent-dark); border-color: var(--pink-accent); }
+  main { max-width: 900px; margin: 0 auto; padding: 48px 24px 80px; }
+  h1 { font-size: 2rem; margin: 0 0 10px; color: var(--text-dark); }
+  .page-intro { color: var(--text-muted); margin: 0 0 28px; font-size: 0.98rem; }
+  .indent-first { text-indent: 2em; }
+  .hint {
+    background: var(--pink-bg-soft);
+    border: 1px dashed var(--pink-accent);
+    color: var(--pink-accent-dark);
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 0.88rem;
+    margin: 20px 0 32px;
+  }
+  section {
+    background: var(--pink-card);
+    border: 1px solid var(--border-soft);
+    border-radius: 16px;
+    padding: 26px;
+    margin-bottom: 26px;
+    box-shadow: 0 4px 14px rgba(200, 92, 128, 0.08);
+  }
+  section h2 {
+    font-size: 1.2rem;
+    color: var(--pink-accent-dark);
+    margin: 0 0 14px;
+  }
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    gap: 26px;
+    margin-bottom: 26px;
+  }
+  .two-col section { margin-bottom: 0; height: 100%; }
+  .next-app {
+    background: linear-gradient(135deg, var(--pink-bg-soft) 0%, #fdf6f9 100%);
+    border: 1px solid var(--border-soft);
+    border-radius: 16px;
+    padding: 26px;
+  }
+  .next-app h2 {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    margin: 0 0 14px;
+  }
+  .next-app p { margin: 0 0 20px; }
+  .next-app-buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn-pill {
+    display: inline-block;
+    padding: 12px 26px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+  .btn-pill-primary {
+    background: #fbdce8;
+    color: var(--pink-accent-dark);
+  }
+  .btn-pill-secondary {
+    background: #ffffff;
+    color: var(--text-dark);
+    border: 1px solid #ddd;
+  }
+  @media (max-width: 700px) {
+    .two-col { grid-template-columns: 1fr; }
+  }
+  .placeholder-box {
+    border: 2px dashed var(--border-soft);
+    border-radius: 12px;
+    padding: 28px;
+    text-align: center;
+    color: #c497a8;
+    background: var(--pink-bg-soft);
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+  ul.placeholder-list {
+    margin: 0;
+    padding-left: 20px;
+    color: #c497a8;
+    font-style: italic;
+  }
+  ul.placeholder-list li { margin-bottom: 8px; }
+  footer {
+    text-align: center;
+    padding: 24px;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border-soft);
+  }
+  @media (max-width: 600px) {
+    header { padding: 14px 18px; }
+    nav a { margin-left: 14px; font-size: 0.85rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">Portfolio<small>Lưu trữ dữ liệu cá nhân</small></div>
+  <nav>
+    <a href="about.html">About me</a>
+    <a href="projects.html">Projects</a>
+    <a href="conclusion.html" class="active">Conclusion</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Conclusion</h1>
+  <p class="page-intro">Tổng kết ngắn về điều học được, khó khăn, cách khắc phục và hướng ứng dụng tiếp theo.</p>
+
+  <section>
+    <h2>Lời kết</h2>
+    <p class="indent-first">
+      Sau khi hoàn thành dự án này, mình không chỉ học được cách xây dựng và sắp xếp một website lưu trữ tài
+      liệu học tập mà còn hiểu rõ hơn về cách ứng dụng công nghệ và trí tuệ nhân tạo vào việc học. Dự án cũng
+      giúp mình nhận ra rằng AI không chỉ là một công cụ hỗ trợ mà còn là người bạn đồng hành trong học tập
+      nếu biết sử dụng đúng cách. Việc lưu trữ tài liệu trên một nền tảng trực quan giúp mình dễ dàng ôn tập,
+      quản lý kiến thức và tiết kiệm thời gian tìm kiếm sau này.
+    </p>
+  </section>
+
+  <div class="two-col">
+    <section>
+      <h2>Bài học rút ra</h2>
+      <ul>
+        <li>Tổ chức và quản lý dữ liệu khoa học</li>
+        <li>Không phải nguồn thông tin nào cũng đáng tin cậy</li>
+        <li>Viết prompt càng cụ thể, rõ ràng thì kết quả từ AI càng chất lượng</li>
+        <li>Công cụ hợp tác trực tuyến</li>
+        <li>AI tạo sinh là trợ thủ đắc lực cho sáng tạo nội dung</li>
+        <li>Sử dụng AI có trách nhiệm</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Khó khăn gặp phải</h2>
+      <ul>
+        <li>Nội dung nhiều, dễ bị rối khi không có mục lục và nhãn rõ ràng</li>
+        <li>Ảnh minh chứng đôi lúc mờ hoặc bị cắt, khó đọc</li>
+        <li>Công cụ AI có thể "ảo giác" thông tin hoặc thiếu nguồn kiểm chứng</li>
+        <li>Phối hợp nhóm dễ trôi thông tin nếu kênh giao tiếp không được chuẩn hóa</li>
+        <li>Khó khăn trong việc liên kết các trang web hay tổ chức nội dung sao cho dễ theo dõi cũng như lập ra trang web</li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="next-app">
+    <h2>Ứng dụng tiếp theo</h2>
+    <p>
+      Trong các môn học chuyên ngành Luật, mình sẽ tiếp tục sử dụng workflow tương tự: lập outline, tổng hợp
+      tài liệu, ghi chú nguồn, rồi mới viết bài theo lập luận của bản thân. Với các sản phẩm số
+      (infographic/bài thuyết trình), mình ưu tiên thiết kế tối giản, dễ đọc và minh bạch về cách dùng AI.
+    </p>
+    <div class="next-app-buttons">
+      <a href="projects.html" class="btn-pill btn-pill-primary">Xem lại Projects</a>
+      <a href="about.html" class="btn-pill btn-pill-secondary">Quay về About me</a>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 • Portfolio học tập (offline)</footer>
+
+</body>
+</html>
