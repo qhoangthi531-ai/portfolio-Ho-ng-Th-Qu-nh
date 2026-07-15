@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | Hoàng Thị Quỳnh</title>
+<style>
+  :root {
+    --pink-bg: #fdf1f5;
+    --pink-bg-soft: #fce6ee;
+    --pink-accent: #e8779a;
+    --pink-accent-dark: #c85c80;
+    --pink-card: #ffffff;
+    --text-dark: #4a2f3a;
+    --text-muted: #8a6b76;
+    --border-soft: #f3d3e0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--pink-bg);
+    color: var(--text-dark);
+    line-height: 1.6;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    background: var(--pink-card);
+    border-bottom: 1px solid var(--border-soft);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .brand {
+    font-weight: 700;
+    color: var(--pink-accent-dark);
+    font-size: 1.05rem;
+  }
+  .brand small {
+    display: block;
+    font-weight: 400;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+  }
+  nav a {
+    color: var(--text-dark);
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 0.95rem;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: border-color .2s, color .2s;
+  }
+  nav a:hover, nav a.active {
+    color: var(--pink-accent-dark);
+    border-color: var(--pink-accent);
+  }
+  .hero {
+    max-width: 900px;
+    margin: 48px auto;
+    padding: 0 24px;
+    text-align: center;
+  }
+  .avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--pink-card);
+    box-shadow: 0 8px 24px rgba(200, 92, 128, 0.25);
+    margin-bottom: 24px;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin: 0 0 10px;
+    color: var(--text-dark);
+  }
+  .meta {
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin-bottom: 24px;
+  }
+  .meta b { color: var(--pink-accent-dark); }
+  .tags {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+  }
+  .tag {
+    background: var(--pink-bg-soft);
+    color: var(--pink-accent-dark);
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .intro {
+    max-width: 680px;
+    margin: 0 auto 36px;
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+  }
+  .nav-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s;
+  }
+  .nav-link-primary {
+    background: var(--pink-accent);
+    color: #fff;
+  }
+  .nav-link-primary:hover {
+    background: var(--pink-accent-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(200, 92, 128, 0.3);
+  }
+  .nav-link-secondary {
+    background: var(--pink-bg-soft);
+    color: var(--pink-accent-dark);
+    border: 2px solid var(--pink-accent);
+  }
+  .nav-link-secondary:hover {
+    background: var(--pink-accent);
+    color: #fff;
+    transform: translateY(-2px);
+  }
+  main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 24px 80px;
+  }
+  .section-intro {
+    background: var(--pink-card);
+    border: 1px solid var(--border-soft);
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 32px;
+    box-shadow: 0 4px 14px rgba(200, 92, 128, 0.08);
+  }
+  .section-intro h2 {
+    font-size: 1.3rem;
+    color: var(--pink-accent-dark);
+    margin: 0 0 16px;
+  }
+  .section-intro p {
+    margin: 0 0 12px;
+    line-height: 1.7;
+    color: var(--text-dark);
+  }
+  .section-intro p:last-child {
+    margin-bottom: 0;
+  }
+  footer {
+    text-align: center;
+    padding: 24px;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border-soft);
+  }
+  @media (max-width: 600px) {
+    header { padding: 14px 18px; }
+    nav a { margin-left: 14px; font-size: 0.85rem; }
+    h1 { font-size: 1.8rem; }
+    .nav-links { flex-direction: column; }
+    .nav-link { width: 100%; }
+    .section-intro { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">Portfolio<small>Lưu trữ dữ liệu cá nhân</small></div>
+  <nav>
+    <a href="index.html" class="active">About me</a>
+    <a href="projects.html">Projects</a>
+    <a href="conclusion.html">Conclusion</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <img class="avatar" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh[...]" alt="Avatar">
+  <h1>Hoàng Thị Quỳnh</h1>
+  <div class="meta">Mã sinh viên <b>25051690</b> • Sinh viên ngành <b>Quản trị Kinh doanh</b> • Trường Đại học Kinh Tế – ĐHQGHN</div>
+  <div class="tags">
+    <span class="tag">Tư duy phản biện</span>
+    <span class="tag">Kỹ năng nghiên cứu</span>
+    <span class="tag">Trình bày học thuật</span>
+  </div>
+  <p class="intro">Mình xây dựng portfolio này để lưu lại hành trình học tập trong môi trường số: từ kỹ năng thao tác dữ liệu, phối hợp nhóm, đến việc ứng dụng AI có trách nhiệm.</p>
+  
+  <div class="nav-links">
+    <a href="index.html" class="nav-link nav-link-primary">Thông tin về tôi</a>
+    <a href="projects.html" class="nav-link nav-link-secondary">Xem các bài tập</a>
+    <a href="conclusion.html" class="nav-link nav-link-secondary">Xem kết luận</a>
+  </div>
+</div>
+
+<main>
+  <div class="section-intro">
+    <h2>👋 Chào mừng đến với Portfolio của mình!</h2>
+    <p>Đây là nơi lưu trữ các bài tập, dự án học tập và những suy nghĩ của mình về hành trình học tập trong thời đại số.</p>
+    <p>Bạn có thể khám phá những gì mình học được, những bài tập đã hoàn thành, và những bài học rút ra từ quá trình này.</p>
+  </div>
+
+  <div class="section-intro">
+    <h2>📚 Các phần chính</h2>
+    <p><strong>About me:</strong> Thông tin chi tiết về mình, mục tiêu học tập, kỹ năng, sở thích và nguyên tắc làm bài.</p>
+    <p><strong>Projects:</strong> Tập hợp 6 bài tập chi tiết với hình ảnh minh họa, bảng biểu và phân tích đầy đủ từ từng chương.</p>
+    <p><strong>Conclusion:</strong> Tổng kết những gì đã học được, những khó khăn gặp phải, cách khắc phục và hướng ứng dụng tiếp theo.</p>
+  </div>
+</main>
+
+<footer>© 2026 • Portfolio học tập (offline)</footer>
+
+</body>
+</html>
